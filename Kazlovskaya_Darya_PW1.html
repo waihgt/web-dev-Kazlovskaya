@@ -3,24 +3,56 @@
 
    <head>
       <title>Practical Work 01</title>
-   </head>
 
 
    <style>
-    #st1 {
-      background-color: rgb(42, 40, 58);
-      color: rgb(255, 255, 255);
+  header {
+  background-color: darkslateblue;
+  padding: 30px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+nav {
+  background-color: white;
+  padding: 30px;
+  text-align: left;
+  font-size: 15px;
+  color: black;
+}
+section {
+  background-color: lightgray;
+  padding: 30px;
+  text-align: left;
+  font-size: 15px;
+  color: black;
+}
+article {
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+}
+footer {
+  background-color: darkslateblue;
+  padding: 10px;
+  text-align: right;
+  font-size: 15px;
+  color: white;
+}
+    .st1 {
+      background-color: darkslateblue;
+      color: white;
       padding: 10px;
       text-align: left;
     }
 
     #st2 {
-      background-color: rgb(223, 221, 238);
-      color: rgb(29, 27, 32);
       padding: 10px;
-      text-align: left;
     }
     </style>
+    </head>
 
 
    <body>
@@ -41,11 +73,11 @@
 
       <section>
         <dl>
-          <dt id="st1" id="a1">When HTML5 has become a standard? What were the main reasons for developing new standard?</dt>
+          <dt id="a1" class="st1">When HTML5 has become a standard? What were the main reasons for developing new standard?</dt>
           <dd id="st2"> HTML5 has become a standard on 28 October 2014. The main reasons for the development of the new standard were the development and the need for new features.</dd>
-          <dt id="st1" id="a2">What is a difference between W3C HTML5 and WHATWG HTML Living Standard?</dt>
+          <dt id="a2" class="st1">What is a difference between W3C HTML5 and WHATWG HTML Living Standard?</dt>
           <dd id="st2">Difference between W3C HTML5 and WHATWG HTML Living Standard is that the W3C "HTML5" standard was snapshot-based and static, while the WHATWG "HTML living standard" is continually updated.</dd>
-          <dt id="st1" id="a3">What is the minimal HTML page code? </dt>
+          <dt id="a3" class="st1">What is the minimal HTML page code? </dt>
           <dd id="st2">&lt;!DOCTYPE html&gt; <br/>
             &lt;html&gt; <br/>
             &lt;head&gt; <br/>
@@ -56,20 +88,28 @@
             &lt;/body&gt; <br/>
             &lt;/html&gt;
             </dd>
-         <dt id="st1" id="a4">Comment on semantic and presentational markup. Why presentational markup is considered deprecated now? </dt>
+         <dt id="a4" class="st1">Comment on semantic and presentational markup. Why presentational markup is considered deprecated now? </dt>
          <dd id="st2">Presentation HTML focuses on style and appearance, while semantic HTML focuses on conveying the structure and content of a page. Because of this, semantic HTML gets an advantage, because it is more convenient and practical.</dd>
-         <dt id="st1" id="a5">How you can check browser support for particular tag or attribute?</dt>
+         <dt id="a5" class="st1">How you can check browser support for particular tag or attribute?</dt>
          <dd id="st2">You can check browser support for particular tag or attribute using Modernizr (It checks for support of HTML5 tags and attributes and provides a consistent way to handle them.)</dd>
-         <dt id="st1" id="a6">What are the audio and video formats, officially supported by HTML standard? What happens if you use other format?</dt>
-         <dd id="st2">Audio and video formats officially supported by HTML standard: MP3, AAC, Ogg Vorbis, MP4, WebM, Ogg Theora. If you use other format browsers that don’t recognize the format won’t be able to play the audio/video. </dd>
+         <dt id="a6" class="st1">What are the audio and video formats, officially supported by HTML standard? What happens if you use other format?</dt>
+         <dd id="st2">Audio and video formats officially supported by HTML standard: MP3, AAC, Ogg Vorbis, MP4, WebM, Ogg Theora. If you use other format browsers that don&apos;t recognize the format won&apos;t be able to play the audio/video. </dd>
         </dl>
       </section>
 
-      <article></article>
+      <article>
+        <video width="500" controls>
+          <source src="https://youtu.be/dGLuW4VHTpg?si=9p8lB99q4-N4D7wx" type="video/mp4">
+          <source src="https://youtu.be/dGLuW4VHTpg?si=HnFH_L_Tylp3vSbS" type="video/ogg">
+        </video>
+        <audio> 
+          <source src="Hamili - Paradiso.mp3">
+        </audio>
+        </article>
 
       <footer>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <img src="D:\учеба\Без названия.png" alt="SB.BSU logo image">
+        <p>Not everything was clear to me at first, but I more or less figured it out in the process. The most difficult part was to add working video and audio. I learned the basics of Html in practice.</p>
+        <img src="./Без названия.png" alt="SB.BSU logo image" width="150">
       </footer>
 
    </body>
