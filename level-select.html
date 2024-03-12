@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<title>level-select</title>
+<style>
+    .img {
+        margin-top: 40px;
+    }
+    .tooltip {
+      position: relative;
+      display: inline-block;
+    }
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 100px;
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 5px 0;
+      border-radius: 5px;
+      position: absolute;
+      z-index: 1;
+      bottom: 100%;
+      left: 45%;
+    }
+    .tooltip:hover .tooltiptext{
+      visibility: visible;
+    }
+    body {
+      text-align: center;
+    }
+</style>
+</head>
+
+<body>
+    <map name="map">
+        <area
+          shape="rect"
+          coords="321,791,406,870"
+          href="./level1.html"
+          alt="HTTP" />
+        <area
+          shape="rect"
+          coords="393,555,482,629"
+          href="./final-boss.html" />
+        </map>
+   <p class="img"> 
+    <div class="tooltip"> <img usemap="#map" src="11.jpg"> <span class="tooltiptext">Map</span>
+    </div>
+   </p>
+</body>
+
+</html>
